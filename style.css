@@ -167,7 +167,11 @@ body {
   max-width: 500px;
   margin: auto;
 }
-
+#contato p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
 .campo {
   margin-bottom: 20px;
 }
@@ -202,6 +206,18 @@ button:hover {
   background: var(--marrom);
 }
 
+/* ANIMAÇÃO DE APARECER NO FORMULÁRIO DE CONTATO */
+.bloco {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.bloco.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* RODAPÉ */
 .rodape {
   background: var(--verde);
@@ -211,7 +227,7 @@ button:hover {
   margin-top: 40px;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
 
   .sobre-conteudo {
