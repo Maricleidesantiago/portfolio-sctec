@@ -1,0 +1,227 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Palhetas de cores que serão usadas no projeto */
+:root {
+  --verde: #2f5d50;
+  --verde-claro: #6fa89a;
+  --marrom: #8b6f4e;
+  --bege: #f4efe9;
+  --branco: #ffffff;
+  --cinza: #444;
+}
+
+/* CORPO */
+body {
+  background-color: var(--bege);
+  color: var(--cinza);
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(
+    to right,
+    var(--verde),
+    var(--verde-claro)
+  );
+  color: var(--branco);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+}
+
+.subtitulo {
+  margin: 10px 0 25px;
+  font-size: 1.2rem;
+}
+
+/* MENU */
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: var(--marrom);
+}
+
+/* BLOCOS */
+.bloco {
+  background: var(--branco);
+  margin: 50px auto;
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.bloco h2 {
+  text-align: center;
+  color: var(--verde);
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* SOBRE */
+.sobre-conteudo {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.foto-perfil {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--verde);
+  margin: auto;
+}
+
+.texto-sobre {
+  flex: 1;
+}
+
+.frase-destaque {
+  margin-top: 15px;
+  font-style: italic;
+  color: var(--marrom);
+  font-weight: bold;
+}
+
+/* JORNADA E OBJETIVOS */
+#jornada p,
+#objetivos p {
+  max-width: 800px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+/* PROJETOS */
+.cards-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--bege);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: var(--verde);
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: var(--branco);
+  background: var(--verde);
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: var(--marrom);
+}
+
+/* FORMULÁRIO */
+#form-contato {
+  max-width: 500px;
+  margin: auto;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--verde);
+  color: var(--branco);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--marrom);
+}
+
+/* RODAPÉ */
+.rodape {
+  background: var(--verde);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  .sobre-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
