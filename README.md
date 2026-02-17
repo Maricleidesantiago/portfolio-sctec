@@ -72,8 +72,6 @@ Esses aprendizados são fundamentais para minha formação como desenvolvedora.
 
 ## 🌟 Considerações Finais
 
-Este portfólio representa um marco importante na minha trajetória acadêmica e profissional. Ele demonstra não apenas meus conhecimentos técnicos, mas também meu comprometimento, disciplina e vontade de evoluir constantemente.
-
 O projeto continuará sendo aprimorado ao longo do tempo, conforme novas habilidades forem adquiridas e novos desafios forem enfrentados.
 
 ## 📬 Contato
